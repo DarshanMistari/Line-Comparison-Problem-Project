@@ -12,7 +12,7 @@ public class LineCompProblem {
 
 	public void lineInput()
 	{
-		Scanner scanner= new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Enter the x1 y1 and x2 y2 Point for the Line :");
 		x1 = scanner.nextInt();
@@ -32,9 +32,13 @@ public class LineCompProblem {
 		{
 			System.out.println("Both Line are Same");
 		}
+		else if(this.lineCalculate() > linecompproblem2.lineCalculate())
+		{
+			System.out.println("Line 1 is Greater than Line 2");
+		}
 		else
 		{
-			System.out.println("Both line are not Same");
+			System.out.println("Line 2 is Greater than Line 1");
 		}
 	}
 	
